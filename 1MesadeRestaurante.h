@@ -13,7 +13,7 @@ class MesaDeRestaurante
         virtual ~MesaDeRestaurante();
         void adicionaAoPedido(Pedido p);
         void zeraPedidos();
-        double calculaPedidos();
+        double calculaTotal();
 
     protected:
 
