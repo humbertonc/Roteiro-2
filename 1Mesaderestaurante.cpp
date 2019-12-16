@@ -3,7 +3,9 @@
 using namespace std;
 MesaDeRestaurante::MesaDeRestaurante()
 {
-    //ctor
+    for(int i = 0; i < 50; i++){
+        pedidos[i].setPreco(0);
+    }
 }
 
 MesaDeRestaurante::~MesaDeRestaurante()
@@ -33,7 +35,7 @@ void MesaDeRestaurante::zeraPedidos()
     }
 }
 
-double MesaDeRestaurante::calculaPedidos()
+double MesaDeRestaurante::calculaTotal()
 {
     int i;
     double soma = 0;
